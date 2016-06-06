@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Web Development Template</title>
+    <title>Word Order Practice</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
 
     <!-- Bootstrap core CSS -->
@@ -31,12 +31,17 @@
   <body>
     <div class="container">
       <header>
-        <h1>Epicodus Project Template</h1>
+        <h1>Practice changing word order with looping</h1>
       </header>
-      <h2>Hello World!</h2>
-      <p>
-        This is a nice little index file.  It calls in five different files to support Bootstrap, JQuery, and your custom css and js.
-      </p>
+      <h2>Enter a block of text below and see how it gets rearranged</h2>
+        <form id="text-block">
+          <div class="form-group">
+            <input type="text" class="form-control" id="usr">
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+        <ul id="output">
+        </ul>
       <footer>
         <p>&copy; 2016 Epicodus Pair Project, Inc.</p>
       </footer>
