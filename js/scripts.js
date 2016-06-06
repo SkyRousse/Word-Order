@@ -4,13 +4,16 @@ $(function() {
     event.preventDefault();
     var userInput = $("input#usr").val();
     var inputArray = userInput.split(' ');
-    // alert (inputArray);
-    inputArray.forEach(function(word) {
+     $("ul#output").empty();
+    inputArray.forEach(function(word,index) {
       var newArray = inputArray.filter(function(a) {
         return(a === word);
       });
-      console.log(newArray);
-      $("ul#output").append("<li>" + word + ": " + newArray.length + "</li>")
+      var  count = newArray.length;
+
+      if (count >= 1 && inputArray.indexOf(word) ===  index){
+        $("ul#output").append("<li>" + word + ": " + count + "</li>");
+      }
     });
   });
 });
